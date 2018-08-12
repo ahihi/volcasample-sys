@@ -24,13 +24,6 @@ fn build() -> Result<(), Box<Error>> {
         .whitelist_var("VOLCASAMPLE_NUM_OF_PATTERN")
         .whitelist_var("VOLCASAMPLE_NUM_OF_SAMPLE")
         .whitelist_var("VOLCASAMPLE_PATTERN_SIZE")
-
-        
-        //.whitelist_type("Endian")
-        //.whitelist_type("SyroDataType")
-        //.whitelist_function()
-        //.whitelist_var("Endian")
-        //.whitelist_var
         .rustfmt_bindings(true)
         .generate()
         .map_err(|()| "Failed to generate bindings")?;

@@ -1,0 +1,22 @@
+sudo: false
+
+language: rust
+
+rust:
+    - stable
+
+matrix:
+  allow_failures:
+
+env:
+
+
+addons:
+  apt:
+    packages:
+
+script:
+  - git submodule init
+  - git submodule update
+  - cargo build
+  - cargo test
