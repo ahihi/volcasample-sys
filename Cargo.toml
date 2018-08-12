@@ -1,0 +1,13 @@
+[package]
+name = "volcasample-sys"
+version = "0.1.0"
+authors = ["Miranda Kastemaa <miranda@foldplop.com>"]
+build = "build.rs"
+license = "BSD-3-Clause"
+description = "Rust bindings for KORG's Volca Sample SDK."
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.37"
+cc = "1.0"
