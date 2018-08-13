@@ -25,6 +25,7 @@ fn build() -> Result<(), Box<Error>> {
         .whitelist_function("SyroVolcaSample_.+")
         .whitelist_var("VOLCASAMPLE_.+")
         .rustfmt_bindings(true)
+        .prepend_enum_name(false)
         .generate()
         .map_err(|()| "Failed to generate bindings")?;
 
