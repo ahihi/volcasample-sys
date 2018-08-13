@@ -4,7 +4,9 @@ version = "0.1.0"
 authors = ["Miranda Kastemaa <miranda@foldplop.com>"]
 build = "build.rs"
 license = "BSD-3-Clause"
-description = "Rust bindings for KORG's Volca Sample SDK."
+description = "native bindings to korg's volca sample sdk"
+repository = "https://github.com/ahihi/volcasample-sys"
+categories = ["external-ffi-bindings", "multimedia::audio"]
 
 [dependencies]
 
